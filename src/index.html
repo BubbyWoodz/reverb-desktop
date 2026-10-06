@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverb — Connect to your server</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="setup">
+      <img class="logo" src="icon.png" alt="Reverb" />
+      <h1>Reverb</h1>
+      <p class="subtitle">Connect to your music server</p>
+
+      <form id="setup-form" autocomplete="off">
+        <label for="server-url">Server address</label>
+        <input
+          id="server-url"
+          name="server-url"
+          type="text"
+          inputmode="url"
+          placeholder="http://umbrel.local:1970"
+          spellcheck="false"
+        />
+        <p class="hint">
+          Your Reverb server address — for example
+          <code>http://umbrel.local:1970</code> or your Tailscale address.
+        </p>
+        <div class="row">
+          <button type="button" id="test-btn" class="ghost">Test</button>
+          <button type="submit" id="connect-btn" class="primary">Connect</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </form>
+    </main>
+    <script src="setup.js"></script>
+  </body>
+</html>
