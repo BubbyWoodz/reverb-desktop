@@ -12,7 +12,7 @@ use std::sync::{Arc, Mutex};
 use tauri::{
     menu::{CheckMenuItem, Menu, MenuItem, PredefinedMenuItem},
     tray::{MouseButton, MouseButtonState, TrayIconBuilder, TrayIconEvent},
-    Emitter, Manager, WebviewUrl, WebviewWindowBuilder, WindowEvent,
+    Emitter, Listener, Manager, WebviewUrl, WebviewWindowBuilder, WindowEvent,
 };
 use tauri_plugin_autostart::ManagerExt as _;
 use tauri_plugin_global_shortcut::{Code, GlobalShortcutExt, ShortcutState};
