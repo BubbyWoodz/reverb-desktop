@@ -1,0 +1,1 @@
+{"description":"Reverb — the native desktop app for your self-hosted music server","devDependencies":{"@tauri-apps/cli":"2.12.1"},"name":"reverb-desktop","scripts":{"tauri":"tauri"},"type":"module","version":"0.1.0"}
